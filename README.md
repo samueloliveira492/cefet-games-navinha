@@ -81,27 +81,28 @@ public class Collision {
 }
 ```
 
-Lembre-se de que é interessante os métodos de vetores já implementados em
-`Vector2` (e `Vector3`) da LibGDX. Veja a [documentação do `Vector2`][vector2].
+Lembre-se de que é interessante usar os métodos de vetores da geometria
+analítica que já implementados em `Vector2` (e `Vector3`) da LibGDX. Veja
+a [documentação do `Vector2`][vector2].
 
 
-### Exercício 1
+### Exercício 1: círculo _vs_ círculo
 
 Para calcular a colisão entre alguns objetos, implemente na classe `Collision`
 o método `circlesOverlap` considerando:
 
-1. Círculo _vs_ círculo
-   - Colidem se a distância entre eles é menor que a soma de seus raios
-   - _Nota: tente fazer essa verificação sem usar a operação de radiciação_
+- Círculos colidem se a distância entre eles é menor que a soma de seus raios
+- _Nota: tente fazer essa verificação sem usar a operação de radiciação_
 
-### Exercício 2
+### Exercício 2: retângulo _vs_ retângulo
 
 Agora, implemente o método `rectsOverlap` considerando:
 
-1. Retângulo _vs_ retângulo
-   - Colidem se todos os eixos (x, y, z?) colidem
-   - Um eixo está em colisão se `max<sub>1</sub>` &gte; `min<sub>2</sub>` e
-     `min<sub>1</sub>` &lte; `max<sub>1`
+- Colidem se todos os eixos (x, y, z?) colidem
+- Um eixo está em colisão se a<sub>max</sub> ≥ b<sub>min</sub> e
+  a<sub>min</sub> ≤ b<sub>max</sub>
+- Um retângulo possui uma posição que indica seu canto esquerdo-inferior.
+
 
 ### Desafio 1
 

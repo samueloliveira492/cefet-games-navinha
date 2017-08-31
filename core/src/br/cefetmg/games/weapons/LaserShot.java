@@ -27,7 +27,7 @@ public class LaserShot implements Shot {
         bounds = new Rectangle(
                 position.x - WIDTH / 2f, position.y - HEIGHT / 2f,
                 WIDTH, HEIGHT);
-        speed = 100;
+        speed = 350;
     }
 
     @Override

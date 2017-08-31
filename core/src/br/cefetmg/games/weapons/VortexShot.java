@@ -25,7 +25,7 @@ public class VortexShot implements Shot {
     VortexShot(Vector2 position) {
         radius = 5;
         this.position = new Vector2(position.x, position.y + radius);
-        speed = 45;
+        speed = 220;
         bounds = new Rectangle(position.x, position.y, radius * 2, radius * 2);
         circle = new Circle(position, radius);
     }
